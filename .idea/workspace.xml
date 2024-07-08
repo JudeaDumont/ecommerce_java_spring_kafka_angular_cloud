@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <change afterPath="$PROJECT_DIR$/services/product/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JudeaDumont&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JudeaDumont/mastering_microservices_spring_kafka_zipkin_mogo_postgres.git&quot;,
+    &quot;accountId&quot;: &quot;46ace452-0e59-4bc0-9460-709201ba0505&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2iUK0QE2cRKsm6FGdD08l3OQzad" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.CustomerApplication.executor": "Run",
+    "Spring Boot.DiscoveryApplication.executor": "Run",
+    "Spring Boot.ProductApplication.executor": "Run",
+    "Spring Boot.Unnamed.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/order/src/main/java/com/alibou/ecommerce",
+    "last_opened_file_path": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.alibou.ecommerce.orderLine" />
+      <recent name="com.alibou.ecommerce.order" />
+      <recent name="com.alibou.ecommerce.kafka" />
+      <recent name="com.alibou.ecommerce.exception" />
+      <recent name="com.alibou.ecommerce.product" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\repos\mine\mastering_microservices_spring_kafka_zipkin_mogo_postgres\services\order\src\main\java\com\alibou\ecommerce" />
+      <recent name="C:\dev\repos\mine\mastering_microservices_spring_kafka_zipkin_mogo_postgres\services\config-server\src\main\resources\configurations" />
+      <recent name="C:\dev\repos\mine\mastering_microservices_spring_kafka_zipkin_mogo_postgres\services\product\src\main\java\com\alibou\ecommerce" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\repos\mine\mastering_microservices_spring_kafka_zipkin_mogo_postgres\services\config-server\src\main\resources\configurations" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MavenRunConfiguration" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+        <option value="springBootConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alibou.config_server.ConfigServerApplication" />
+      <module name="config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alibou.config_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.config_server.ConfigServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alibou.config_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.ecommerce.CustomerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="discovery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.discovery.DiscoveryApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alibou.discovery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.ecommerce.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.ecommerce.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.CustomerApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+      <item itemvalue="Spring Boot.ProductApplication" />
+      <item itemvalue="Spring Boot.DiscoveryApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.DiscoveryApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="" />
+      <created>1719539494029</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719539494029</updated>
+      <workItem from="1719613869179" duration="35000" />
+      <workItem from="1719613911156" duration="231000" />
+      <workItem from="1719614150215" duration="44000" />
+      <workItem from="1719614205131" duration="268000" />
+      <workItem from="1719614487347" duration="539000" />
+      <workItem from="1719615129771" duration="1034000" />
+      <workItem from="1719616180783" duration="1490000" />
+      <workItem from="1719654452681" duration="35726000" />
+      <workItem from="1719939015434" duration="334000" />
+      <workItem from="1719976561447" duration="8849000" />
+      <workItem from="1720043635707" duration="237000" />
+      <workItem from="1720043891318" duration="51000" />
+      <workItem from="1720241870793" duration="5179000" />
+      <workItem from="1720293137770" duration="12000" />
+      <workItem from="1720406464055" duration="1749000" />
+      <workItem from="1720408905529" duration="10000" />
+      <workItem from="1720408926066" duration="295000" />
+      <workItem from="1720409237042" duration="113000" />
+      <workItem from="1720409380731" duration="112000" />
+      <workItem from="1720409516912" duration="37000" />
+      <workItem from="1720409568331" duration="49000" />
+      <workItem from="1720409625572" duration="50000" />
+      <workItem from="1720409685204" duration="234000" />
+      <workItem from="1720409929672" duration="223000" />
+      <workItem from="1720410161937" duration="19000" />
+      <workItem from="1720410190178" duration="400000" />
+    </task>
+    <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
+      <option name="closed" value="true" />
+      <created>1719546173197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719546173197</updated>
+    </task>
+    <task id="LOCAL-00002" summary="config-server added, modules are in working order but the ide is complaining.">
+      <option name="closed" value="true" />
+      <created>1719609845262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719609845262</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" got the discovery service and config service talking to each other through the services window under spring boot. I had to fight with the IDE and module creation to get it working. I also had to move the discovery config into the config service resources folder where it belongs. &#10; &#10; I bought intelliJ ultimate so I could get the spring boot plugins in order, but ultimately removes a class of ide problems that I want to eliminate from debug triaging.&#10; &#10; the module structure does not look the same as  the tutorial, but I could not get his setup working at all, this is working so I am just going to move forward with it.">
+      <option name="closed" value="true" />
+      <created>1719617650994</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719617650994</updated>
+    </task>
+    <task id="LOCAL-00004" summary="customer service finished and product service started">
+      <option name="closed" value="true" />
+      <created>1719694163199</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719694163199</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Making sure everything gets committed, progressing with the order miscroservice which connects to both customer and product.">
+      <option name="closed" value="true" />
+      <created>1719714561660</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719714561660</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Order Service progress">
+      <option name="closed" value="true" />
+      <created>1719731703529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719731703529</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Order Service progress">
+      <option name="closed" value="true" />
+      <created>1719735745844</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719735745844</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Order Service progress">
+      <option name="closed" value="true" />
+      <created>1719805821927</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719805821927</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Order Service progress">
+      <option name="closed" value="true" />
+      <created>1719979093624</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719979093624</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <option name="closed" value="true" />
+      <created>1719984889370</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719984889370</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <option name="closed" value="true" />
+      <created>1719986498458</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719986498458</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <option name="closed" value="true" />
+      <created>1720406474125</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720406474125</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <option name="closed" value="true" />
+      <created>1720406519291</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720406519291</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <option name="closed" value="true" />
+      <created>1720406969139</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720406969139</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <option name="closed" value="true" />
+      <created>1720408268644</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720408268644</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well.">
+      <option name="closed" value="true" />
+      <created>1720408820083</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720408820083</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="9f6b63e4-47e7-44a1-b2e4-055ee1a5c66e" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="9f6b63e4-47e7-44a1-b2e4-055ee1a5c66e">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/discovery" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/services/discovery" />
+    </ignored-roots>
+    <MESSAGE value="mastering microservices, functions docker compose configuration" />
+    <MESSAGE value="config-server added, modules are in working order but the ide is complaining." />
+    <MESSAGE value=" got the discovery service and config service talking to each other through the services window under spring boot. I had to fight with the IDE and module creation to get it working. I also had to move the discovery config into the config service resources folder where it belongs. &#10; &#10; I bought intelliJ ultimate so I could get the spring boot plugins in order, but ultimately removes a class of ide problems that I want to eliminate from debug triaging.&#10; &#10; the module structure does not look the same as  the tutorial, but I could not get his setup working at all, this is working so I am just going to move forward with it." />
+    <MESSAGE value="customer service finished and product service started" />
+    <MESSAGE value="Making sure everything gets committed, progressing with the order miscroservice which connects to both customer and product." />
+    <MESSAGE value="Order Service progress" />
+    <MESSAGE value="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well." />
+    <option name="LAST_COMMIT_MESSAGE" value="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
