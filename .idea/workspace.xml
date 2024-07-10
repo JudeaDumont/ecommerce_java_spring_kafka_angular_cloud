@@ -4,12 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation">
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/notification-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/order-confirmation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/payment-confirmation.html" afterDir="false" />
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="templates for email types added">
+      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/src/main/java/com/alibou/ecommerce/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/gateway/src/test/java/com/alibou/ecommerce/GatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/notification-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/order-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/order-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/payment-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/payment-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,44 +77,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CustomerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/order/src/main/java/com/alibou/ecommerce&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/notification&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Debug",
+    "Spring Boot.CustomerApplication.executor": "Debug",
+    "Spring Boot.DiscoveryApplication.executor": "Debug",
+    "Spring Boot.NotificationApplication.executor": "Debug",
+    "Spring Boot.OrderApplication.executor": "Debug",
+    "Spring Boot.ProductApplication.executor": "Run",
+    "Spring Boot.Unnamed.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/order/src/main/java/com/alibou/ecommerce",
+    "last_opened_file_path": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/gateway",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -183,6 +197,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.ecommerce.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="notification" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.alibou.ecommerce.NotificationApplication" />
@@ -213,6 +234,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.PaymentApplication" />
       <item itemvalue="Spring Boot.CustomerApplication" />
@@ -274,7 +296,7 @@
       <workItem from="1720410834157" duration="13366000" />
       <workItem from="1720513897035" duration="1395000" />
       <workItem from="1720615663062" duration="5283000" />
-      <workItem from="1720638089434" duration="2444000" />
+      <workItem from="1720638089434" duration="7610000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
@@ -428,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720619653719</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="templates for email types added">
+      <option name="closed" value="true" />
+      <created>1720641046748</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720641046748</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +514,8 @@
     <MESSAGE value="Payment service initial commit" />
     <MESSAGE value="Order Microservice finished after finishing payment microservice and implementing a feign client that order service makes use of." />
     <MESSAGE value="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation" />
+    <MESSAGE value="templates for email types added" />
+    <option name="LAST_COMMIT_MESSAGE" value="templates for email types added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
