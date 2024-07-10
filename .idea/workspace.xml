@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Order Microservice finished after finishing payment microservice and implementing a feign client that order service makes use of." />
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Order Microservice finished after finishing payment microservice and implementing a feign client that order service makes use of.">
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/email/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/email/EmailTemplates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/NotificationConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/OrderConfirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/payment/PaymentConfirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/payment/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/notification/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/notification/NotificationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/PaymentNotificationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/PaymentNotificationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Customer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Record" />
         <option value="Class" />
       </list>
@@ -28,12 +47,12 @@
     &quot;assignee&quot;: &quot;JudeaDumont&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/JudeaDumont/ecommerce_java_spring_kafka_angular_cloud.git&quot;,
-    &quot;accountId&quot;: &quot;46235911-f64b-4f8c-82b3-e98bcbfa34f2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JudeaDumont/ecommerce_java_spring_kafka_angular_cloud.git",
+    "accountId": "46ace452-0e59-4bc0-9460-709201ba0505"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -57,54 +76,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.CustomerApplication.executor": "Run",
-    "Spring Boot.DiscoveryApplication.executor": "Run",
-    "Spring Boot.OrderApplication.executor": "Run",
-    "Spring Boot.ProductApplication.executor": "Run",
-    "Spring Boot.Unnamed.executor": "Run",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/order/src/main/java/com/alibou/ecommerce",
-    "last_opened_file_path": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/notification",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15429688",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CustomerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/order/src/main/java/com/alibou/ecommerce&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/notification&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.alibou.ecommerce.payment" />
       <recent name="com.alibou.ecommerce.notification" />
+      <recent name="com.alibou.ecommerce.kafka" />
+      <recent name="com.alibou.ecommerce.payment" />
       <recent name="com.alibou.ecommerce.orderLine" />
       <recent name="com.alibou.ecommerce.order" />
-      <recent name="com.alibou.ecommerce.kafka" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\repos\mine\mastering_microservices_spring_kafka_zipkin_mogo_postgres\services\order\src\main\java\com\alibou\ecommerce" />
@@ -266,6 +285,7 @@
       <workItem from="1720410190178" duration="400000" />
       <workItem from="1720410834157" duration="13366000" />
       <workItem from="1720513897035" duration="1395000" />
+      <workItem from="1720615663062" duration="3922000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
