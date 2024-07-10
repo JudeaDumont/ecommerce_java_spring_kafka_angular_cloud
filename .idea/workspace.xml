@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Payment service initial commit">
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/config/KafkaPaymentTopicConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/NotificationProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/PaymentNotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/payment-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/payment/PaymentClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/payment/PaymentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb/storage_v2/_src_/database/product.78yN7Q/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb/storage_v2/_src_/database/product.78yN7Q/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb/storage_v2/_src_/database/product.78yN7Q/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb/storage_v2/_src_/database/product.78yN7Q/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb/storage_v2/_src_/database/product.78yN7Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb/storage_v2/_src_/database/product.78yN7Q/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/PaymentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/NotificationProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/NotificationProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -114,8 +116,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.alibou.ecommerce.notification" />
       <recent name="com.alibou.ecommerce.payment" />
+      <recent name="com.alibou.ecommerce.notification" />
       <recent name="com.alibou.ecommerce.orderLine" />
       <recent name="com.alibou.ecommerce.order" />
       <recent name="com.alibou.ecommerce.kafka" />

@@ -5,6 +5,8 @@ import com.alibou.ecommerce.kafka.OrderConfirmation;
 import com.alibou.ecommerce.kafka.OrderProducer;
 import com.alibou.ecommerce.orderLine.OrderLineRequest;
 import com.alibou.ecommerce.orderLine.OrderLineService;
+import com.alibou.ecommerce.payment.PaymentClient;
+import com.alibou.ecommerce.payment.PaymentRequest;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,6 +24,7 @@ public class OrderService {
     private final OrderMapper mapper;
     private final OrderLineService orderLineService;
     private final OrderProducer orderProducer;
+    private final PaymentClient paymentClient;
 
     public Integer createOrder(OrderRequest request) {
         //check the customer --> OpenFeign
@@ -48,6 +51,14 @@ public class OrderService {
         }
 
         //start payment process
+        PaymentRequest paymentRequest = new PaymentRequest(
+                request.amount(),
+                request.paymentMethod(),
+                order.getId(),
+                order.getReference(),
+                customer
+        );
+        paymentClient.requestOrderPayment(paymentRequest);
 
         //send the order confirmation --> notification-ms (kafka)
         orderProducer.sendOrderConfirmation(
