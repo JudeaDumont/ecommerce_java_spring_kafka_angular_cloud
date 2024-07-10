@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Order Microservice finished after finishing payment microservice and implementing a feign client that order service makes use of.">
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/email/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/email/EmailTemplates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/NotificationConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/OrderConfirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/payment/PaymentConfirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/payment/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/notification/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/notification/NotificationType.java" afterDir="false" />
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation">
+      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/notification-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/order-confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/payment-confirmation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/NotificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/PaymentNotificationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/notification/PaymentNotificationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +35,12 @@
     &quot;assignee&quot;: &quot;JudeaDumont&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JudeaDumont/ecommerce_java_spring_kafka_angular_cloud.git",
-    "accountId": "46ace452-0e59-4bc0-9460-709201ba0505"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JudeaDumont/ecommerce_java_spring_kafka_angular_cloud.git&quot;,
+    &quot;accountId&quot;: &quot;46ace452-0e59-4bc0-9460-709201ba0505&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -235,8 +223,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DiscoveryApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Spring Boot.DiscoveryApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
@@ -285,7 +273,8 @@
       <workItem from="1720410190178" duration="400000" />
       <workItem from="1720410834157" duration="13366000" />
       <workItem from="1720513897035" duration="1395000" />
-      <workItem from="1720615663062" duration="3922000" />
+      <workItem from="1720615663062" duration="5283000" />
+      <workItem from="1720638089434" duration="2444000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
@@ -431,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720581181220</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation">
+      <option name="closed" value="true" />
+      <created>1720619653719</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720619653719</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +483,8 @@
     <MESSAGE value="Order Service progress&#10;A long time of coding without having tested anything, and we are going to get started on the front end. *sigh* this does not bode well." />
     <MESSAGE value="Payment service initial commit" />
     <MESSAGE value="Order Microservice finished after finishing payment microservice and implementing a feign client that order service makes use of." />
-    <option name="LAST_COMMIT_MESSAGE" value="Order Microservice finished after finishing payment microservice and implementing a feign client that order service makes use of." />
+    <MESSAGE value="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
