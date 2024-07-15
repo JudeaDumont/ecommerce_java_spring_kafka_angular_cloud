@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext.">
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="you have to mark autowired services like NotificationProducer as final for it to be added to the applicationContext.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/NotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/NotificationConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/templates/order-confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/order-confirmation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/templates/payment-confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/payment-confirmation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +288,7 @@
       <workItem from="1720638089434" duration="9035000" />
       <workItem from="1720901712468" duration="311000" />
       <workItem from="1720923674085" duration="5000" />
-      <workItem from="1720938013349" duration="15254000" />
+      <workItem from="1720938013349" duration="19117000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
@@ -479,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721018622595</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="you have to mark autowired services like NotificationProducer as final for it to be added to the applicationContext.">
+      <option name="closed" value="true" />
+      <created>1721018924733</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1721018924733</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +550,8 @@
     <MESSAGE value="System is built and a few kinks straightened out. Now It is time for testing." />
     <MESSAGE value="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now." />
     <MESSAGE value="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext." />
-    <option name="LAST_COMMIT_MESSAGE" value="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext." />
+    <MESSAGE value="you have to mark autowired services like NotificationProducer as final for it to be added to the applicationContext." />
+    <option name="LAST_COMMIT_MESSAGE" value="you have to mark autowired services like NotificationProducer as final for it to be added to the applicationContext." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

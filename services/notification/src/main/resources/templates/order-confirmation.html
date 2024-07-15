@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,8 +51,9 @@
         <h1>Order Confirmation</h1>
     </div>
     <div class="content">
-        <p>Dear ${customerName},</p>
-        <p>Thank you for your order! We are pleased to confirm your order <strong>${orderReference}</strong> placed on
+        <p>Dear <span th:text="${customerName}"></span>,</p>
+        <p>Thank you for your order! We are pleased to confirm your order
+            <strong th:text="${orderReference}"></strong> placed on
             <strong>${orderDate}</strong>.</p>
         <p><strong>Order Summary:</strong></p>
         <table border="1" cellpadding="10" cellspacing="0" width="100%">

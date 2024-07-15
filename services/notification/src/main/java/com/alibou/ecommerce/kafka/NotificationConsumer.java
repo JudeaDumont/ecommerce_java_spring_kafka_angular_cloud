@@ -52,8 +52,8 @@ public class NotificationConsumer {
         );
 
 
-        var customerName = orderConfirmation.customerResponse().firstname()
-                + " " + orderConfirmation.customerResponse().lastname();
+        var customerName = orderConfirmation.customerResponse().firstName()
+                + " " + orderConfirmation.customerResponse().lastName();
 
         emailService.sendOrderConfirmationEmail(
                 orderConfirmation.customerResponse().email(),
