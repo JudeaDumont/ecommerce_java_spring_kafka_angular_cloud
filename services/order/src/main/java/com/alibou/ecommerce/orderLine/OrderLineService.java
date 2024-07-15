@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class OrderLineService {
 
     private final OrderLineRepository repository;
-    private OrderLineMapper mapper;
+    private final OrderLineMapper mapper;
 
     public Integer saveOrderLine(OrderLineRequest request) {
         var order = mapper.toOrderLine(request);
