@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="System is built and a few kinks straightened out. Now It is time for testing.">
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/alibou/ecommerce/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/alibou/ecommerce/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/CustomerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/CustomerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/orderLine/OrderLineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/orderLine/OrderLineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Payment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +290,7 @@
       <workItem from="1720638089434" duration="9035000" />
       <workItem from="1720901712468" duration="311000" />
       <workItem from="1720923674085" duration="5000" />
-      <workItem from="1720938013349" duration="7240000" />
+      <workItem from="1720938013349" duration="14971000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
@@ -455,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720646833600</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now.">
+      <option name="closed" value="true" />
+      <created>1721009658175</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721009658175</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +526,8 @@
     <MESSAGE value="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation" />
     <MESSAGE value="templates for email types added" />
     <MESSAGE value="System is built and a few kinks straightened out. Now It is time for testing." />
-    <option name="LAST_COMMIT_MESSAGE" value="System is built and a few kinks straightened out. Now It is time for testing." />
+    <MESSAGE value="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
