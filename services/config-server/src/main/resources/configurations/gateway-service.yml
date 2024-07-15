@@ -1,6 +1,10 @@
-cloud:
-  gateway:
-    discovery:
+logging:
+  level:
+    root: debug
+
+spring:
+  cloud:
+    gateway:
       locator:
         enabled: true
       routes:

@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="templates for email types added">
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/src/main/java/com/alibou/ecommerce/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/gateway/src/test/java/com/alibou/ecommerce/GatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="System is built and a few kinks straightened out. Now It is time for testing.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/notification-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/order-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/order-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/payment-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/payment-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,9 +72,11 @@
     "Spring Boot.ConfigServerApplication.executor": "Debug",
     "Spring Boot.CustomerApplication.executor": "Debug",
     "Spring Boot.DiscoveryApplication.executor": "Debug",
+    "Spring Boot.GatewayApplication.executor": "Debug",
     "Spring Boot.NotificationApplication.executor": "Debug",
     "Spring Boot.OrderApplication.executor": "Debug",
-    "Spring Boot.ProductApplication.executor": "Run",
+    "Spring Boot.PaymentApplication.executor": "Debug",
+    "Spring Boot.ProductApplication.executor": "Debug",
     "Spring Boot.Unnamed.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -296,7 +282,10 @@
       <workItem from="1720410834157" duration="13366000" />
       <workItem from="1720513897035" duration="1395000" />
       <workItem from="1720615663062" duration="5283000" />
-      <workItem from="1720638089434" duration="7610000" />
+      <workItem from="1720638089434" duration="9035000" />
+      <workItem from="1720901712468" duration="311000" />
+      <workItem from="1720923674085" duration="5000" />
+      <workItem from="1720938013349" duration="7240000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
@@ -458,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720641046748</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="System is built and a few kinks straightened out. Now It is time for testing.">
+      <option name="closed" value="true" />
+      <created>1720646833600</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1720646833600</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +512,8 @@
     <MESSAGE value="Order Microservice finished after finishing payment microservice and implementing a feign client that order service makes use of." />
     <MESSAGE value="Lots of progress on the notification service including setting up a mail server, an enum that contains built in templatized logic, a thymeleaf template for html in email, and spring trusted packages that allows kafka consuemr to deserialize messages from orderConfirmation and paymentConfirmation" />
     <MESSAGE value="templates for email types added" />
-    <option name="LAST_COMMIT_MESSAGE" value="templates for email types added" />
+    <MESSAGE value="System is built and a few kinks straightened out. Now It is time for testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="System is built and a few kinks straightened out. Now It is time for testing." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
