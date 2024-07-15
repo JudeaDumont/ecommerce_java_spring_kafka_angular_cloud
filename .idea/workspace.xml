@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b48bb13c-c3f8-4a87-83d4-8a9200002cbb.xml" afterDir="false" />
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/alibou/ecommerce/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/alibou/ecommerce/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/CustomerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/CustomerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/orderLine/OrderLineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/alibou/ecommerce/orderLine/OrderLineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/alibou/ecommerce/payment/PaymentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +285,7 @@
       <workItem from="1720638089434" duration="9035000" />
       <workItem from="1720901712468" duration="311000" />
       <workItem from="1720923674085" duration="5000" />
-      <workItem from="1720938013349" duration="14971000" />
+      <workItem from="1720938013349" duration="15254000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
@@ -468,7 +463,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721009658175</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext.">
+      <option name="closed" value="true" />
+      <created>1721018609183</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721018609184</updated>
+    </task>
+    <task id="LOCAL-00024" summary="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext.">
+      <option name="closed" value="true" />
+      <created>1721018622595</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1721018622595</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +538,8 @@
     <MESSAGE value="templates for email types added" />
     <MESSAGE value="System is built and a few kinks straightened out. Now It is time for testing." />
     <MESSAGE value="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now." />
+    <MESSAGE value="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext." />
+    <option name="LAST_COMMIT_MESSAGE" value="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
