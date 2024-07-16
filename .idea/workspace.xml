@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="you have to mark autowired services like NotificationProducer as final for it to be added to the applicationContext.">
+    <list default="true" id="f5df17e4-fddf-42fe-a828-d678639b412b" name="Changes" comment="Fix for getting customer name to show up in the email correctly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/NotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/NotificationConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/alibou/ecommerce/kafka/order/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/templates/order-confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/order-confirmation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/notification/src/main/resources/templates/payment-confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/src/main/resources/templates/payment-confirmation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +82,7 @@
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/order/src/main/java/com/alibou/ecommerce",
-    "last_opened_file_path": "C:/dev/repos/mine/mastering_microservices_spring_kafka_zipkin_mogo_postgres/services/gateway",
+    "last_opened_file_path": "C:/dev/repos/mine/jersey-servlet-scaffolding",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -288,7 +284,7 @@
       <workItem from="1720638089434" duration="9035000" />
       <workItem from="1720901712468" duration="311000" />
       <workItem from="1720923674085" duration="5000" />
-      <workItem from="1720938013349" duration="19117000" />
+      <workItem from="1720938013349" duration="20641000" />
     </task>
     <task id="LOCAL-00001" summary="mastering microservices, functions docker compose configuration">
       <option name="closed" value="true" />
@@ -490,7 +486,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721018924733</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fix for getting customer name to show up in the email correctly">
+      <option name="closed" value="true" />
+      <created>1721029978158</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1721029978158</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +555,8 @@
     <MESSAGE value="Gotta check the documention on the gateway api for spring to figure this one out. No idea why everything was under discovery but it is working now." />
     <MESSAGE value="customer-id as a getMapping alias does not work.&#10;&#10;lastmodified has to be nullable to work for the order and payment database&#10;&#10;you have to mark autowired services like OrderLineMapper as final for it to be added to the applicationContext." />
     <MESSAGE value="you have to mark autowired services like NotificationProducer as final for it to be added to the applicationContext." />
-    <option name="LAST_COMMIT_MESSAGE" value="you have to mark autowired services like NotificationProducer as final for it to be added to the applicationContext." />
+    <MESSAGE value="Fix for getting customer name to show up in the email correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix for getting customer name to show up in the email correctly" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
