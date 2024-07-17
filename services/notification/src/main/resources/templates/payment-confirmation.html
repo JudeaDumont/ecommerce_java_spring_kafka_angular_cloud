@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             width: 100%;
             max-width: 600px;
@@ -20,21 +21,25 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .header {
             text-align: center;
             padding: 10px 0;
             background-color: #4CAF50;
             color: #fff;
         }
+
         .content {
             margin: 20px 0;
         }
+
         .footer {
             text-align: center;
             font-size: 12px;
             color: #777;
             margin-top: 20px;
         }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -51,11 +56,11 @@
         <h1>Payment Confirmation</h1>
     </div>
     <div class="content">
-        <p>Dear ${customerName},</p>
+        <p>Dear <strong th:text="${customerName}"></strong>,</p>
         <p>Thank you for your payment.
             We are pleased to inform you that your payment of
-            <strong>${amount}</strong> has been successfully processed.</p>
-            <strong>Order Reference: ${orderReference}</strong>
+            <strong th:text="${amount}"></strong> has been successfully processed.</p>
+        Order Reference: <strong th:text="${orderReference}"></strong>
     </div>
     <div class="footer">
     </div>
